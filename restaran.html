@@ -132,7 +132,7 @@
             <img src="img/img_2/Capture.jpg" alt="" />
           </div>
 
-          <div class="blok__container container__border">
+          <div class="blok__container container__border burger-menu">
             <div class="nav__row">
               <a href="#">Закуски</a>
               <a href="#">Салаты</a>
@@ -141,6 +141,9 @@
               <a href="#">Гарниры</a>
               <a href="#">Десерты</a>
             </div>
+          </div>
+          <div class="burger">
+            <span></span>
           </div>
           <div class="blok__container">
             <div class="main__text3">Закуски</div>
@@ -374,5 +377,11 @@
         </div>
       </div>
     </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".burger-menu ").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
